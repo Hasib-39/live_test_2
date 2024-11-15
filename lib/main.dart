@@ -23,6 +23,7 @@ class DonateBlood extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        centerTitle: true,
         title: const Text(
             "Need Blood",
           style: TextStyle(
@@ -47,10 +48,19 @@ class DonateBlood extends StatelessWidget {
             CircleAvatar(
               backgroundColor: Colors.grey[600],
               radius: 90,
-              child: const Icon(
+              child: Icon(
                 Icons.bloodtype_outlined,
-                color: Colors.red,
+                color: Colors.red[400],
                 size:100,
+              ),
+            ),
+            const SizedBox(height: 15,),
+            const Text(
+                "Donate Blood",
+              style: TextStyle(
+                color: Colors.black,
+                fontWeight: FontWeight.bold,
+                fontSize: 18
               ),
             )
           ],
